@@ -68,9 +68,18 @@ Run this command inside Pi to refresh immediately and show any connection or res
 
 The extension sends only `GET /v1/usage/quota` to the selected model's configured Meridian base URL. It forwards the resolved `x-meridian-agent` header and does not send the configured API key.
 
-## Other quota providers
+## Credits and other quota providers
 
-This extension was inspired by [pi-usage-bars](https://github.com/hknet/pi-usage-bars). If you do not use Meridian and want the same type of quota display for other supported providers and subscriptions, use that package instead.
+This extension was inspired by
+[pi-usage-bars](https://github.com/hknet/pi-usage-bars). If you do not use
+Meridian and want the same type of quota display for other supported providers
+and subscriptions, use that package instead.
+
+`pi-usage-bars` is based on and inspired by:
+
+- [CodexBar](https://github.com/steipete/CodexBar)
+- [rho usage-bars](https://github.com/mikeyobrien/rho/tree/main/extensions/usage-bars)
+- [ajarellanod/pi-usage-bars](https://github.com/ajarellanod/pi-usage-bars)
 
 ## Development
 
