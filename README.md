@@ -16,10 +16,16 @@ The extension reads Meridian's `GET /v1/usage/quota` endpoint. It activates only
 
 ## Install
 
-Install the extension as a user-wide Pi Git package:
+Install from npm, which is the recommended method:
 
 ```bash
 pi install npm:@jetserge/pi-meridian-quota
+```
+
+Installing from source also works, and tracks `main` rather than a release:
+
+```bash
+pi install git:github.com/CrazyCoder/pi-meridian-quota@main
 ```
 
 Restart Pi after installation. To update it later:
