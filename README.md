@@ -19,7 +19,7 @@ The extension reads Meridian's `GET /v1/usage/quota` endpoint. It activates only
 Install the extension as a user-wide Pi Git package:
 
 ```bash
-pi install git:github.com/CrazyCoder/pi-meridian-quota@main
+pi install npm:@jetserge/pi-meridian-quota
 ```
 
 Restart Pi after installation. To update it later:
@@ -31,7 +31,7 @@ pi update --extensions
 To remove it:
 
 ```bash
-pi remove git:github.com/CrazyCoder/pi-meridian-quota
+pi remove npm:@jetserge/pi-meridian-quota
 ```
 
 ## Configure Pi for Meridian

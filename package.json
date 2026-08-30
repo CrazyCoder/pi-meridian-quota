@@ -1,57 +1,61 @@
 {
-  "name": "pi-meridian-quota",
-  "version": "0.1.0",
-  "description": "Meridian subscription quota bars for Pi",
-  "keywords": [
-    "pi-package",
-    "pi",
-    "extension",
-    "meridian",
-    "anthropic",
-    "claude",
-    "quota",
-    "usage"
-  ],
-  "license": "MIT",
-  "type": "module",
-  "files": [
-    "extensions",
-    "README.md",
-    "LICENSE"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CrazyCoder/pi-meridian-quota.git"
-  },
-  "homepage": "https://github.com/CrazyCoder/pi-meridian-quota#readme",
-  "bugs": {
-    "url": "https://github.com/CrazyCoder/pi-meridian-quota/issues"
-  },
-  "scripts": {
-    "test": "bun test",
-    "typecheck": "tsc --noEmit",
-    "check": "bun run typecheck && bun test",
-    "verify:package": "npm pack --dry-run --json"
-  },
-  "engines": {
-    "node": ">=22.19.0"
-  },
-  "pi": {
-    "extensions": [
-      "./extensions/meridian-quota.ts"
-    ]
-  },
-  "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "*"
-  },
-  "peerDependenciesMeta": {
-    "@earendil-works/pi-coding-agent": {
-      "optional": true
-    }
-  },
-  "devDependencies": {
-    "@earendil-works/pi-coding-agent": "0.84.1",
-    "@types/bun": "1.3.14",
-    "typescript": "5.9.3"
-  }
+	"name": "@jetserge/pi-meridian-quota",
+	"version": "0.1.0",
+	"description": "Meridian subscription quota bars for Pi",
+	"keywords": [
+		"pi-package",
+		"pi",
+		"extension",
+		"meridian",
+		"anthropic",
+		"claude",
+		"quota",
+		"usage"
+	],
+	"license": "MIT",
+	"type": "module",
+	"files": [
+		"extensions",
+		"README.md",
+		"LICENSE"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CrazyCoder/pi-meridian-quota.git"
+	},
+	"homepage": "https://github.com/CrazyCoder/pi-meridian-quota#readme",
+	"bugs": {
+		"url": "https://github.com/CrazyCoder/pi-meridian-quota/issues"
+	},
+	"scripts": {
+		"test": "bun test",
+		"typecheck": "tsc --noEmit",
+		"check": "bun run typecheck && bun test",
+		"verify:package": "npm pack --dry-run --json",
+		"verify:tarball": "node scripts/verify-tarball.mjs"
+	},
+	"engines": {
+		"node": ">=22.19.0"
+	},
+	"pi": {
+		"extensions": [
+			"./extensions/meridian-quota.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"peerDependenciesMeta": {
+		"@earendil-works/pi-coding-agent": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@earendil-works/pi-coding-agent": "0.84.1",
+		"@types/bun": "1.3.14",
+		"typescript": "5.9.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
